@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> //just a test found online for mobile devices//
+    </head>
+    <main>
+        <div class="top-text">
+            <h1>Generate a <span id="span-text"><br>random password</span></h1>
+            <h2>Never use an insecure password again!</h2>
+            <div class="checkbox-container">
+
+                <div class="checkbox-inline">
+                    <input type="checkbox" id="inc-uppercase">
+                    <label for="inc-uppercase">Include uppercase letters</label>
+                </div>
+
+                <div class="checkbox-inline">
+                    <input type="checkbox" id="inc-lowercase">
+                    <label for="inc-lowercase">Include lowercase letters</label>
+                </div>
+
+                <div class="checkbox-inline">
+                    <input type="checkbox" id="inc-numbers">
+                    <label for="inc-numbers">Include numbers</label>
+                </div>
+
+                <div class="checkbox-inline">
+                    <input type="checkbox" id="inc-special">
+                    <label for="inc-special">Include special characters</label>
+                </div>
+
+                <p id="error"></p>
+            </div>
+
+
+
+            
+            <button id="btn-pwdgenerator">Generate passwords</button>
+        </div>
+        <hr>
+        <div class="pwd-results">
+            <p id="box-one"></p> 
+            <p id="box-two"></p> 
+        </div>
+    </main>
+    <body>
+        <h1></h1>
+        <script src="index.js"></script>
+    </body>
+</html>
