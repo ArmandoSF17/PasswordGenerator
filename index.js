@@ -6,33 +6,20 @@ const characters = {
 }
 
 
-let errorEL= document.getElementById("error")
-
-let pwdEl1= document.getElementById("box-one")   
-let pwdEl2 = document.getElementById("box-two") 
-let genButton = document.getElementById("btn-pwdgenerator")
-
-let uppercaseBox = document.getElementById("inc-uppercase")
-let numbersBox = document.getElementById("inc-numbers") 
-let specialBox = document.getElementById("inc-special") 
-let lowercaseBox = document.getElementById("inc-lowercase") 
-let copyBtn1 = document.querySelector(".copy-btn-1")
-let copyBtn2 = document.querySelector(".copy-btn-2")
-
-
-
-
-
-
-console.log(pwdGen2.textContent="er") 
-
-
-
+const errorEL= document.getElementById("error")
+const pwdEl1= document.getElementById("box-one")   
+const pwdEl2 = document.getElementById("box-two") 
+const genButton = document.getElementById("btn-pwdgenerator")
+const uppercaseBox = document.getElementById("inc-uppercase")
+const numbersBox = document.getElementById("inc-numbers") 
+const specialBox = document.getElementById("inc-special") 
+const lowercaseBox = document.getElementById("inc-lowercase") 
+const copyBtn1 = document.querySelector(".copy-btn-1")
+const copyBtn2 = document.querySelector(".copy-btn-2")
 
 function generatePassword() {
-
+    
     let charactersPool = [];
-
 
     if (lowercaseBox.checked) {
         charactersPool = charactersPool.concat(characters.lowercase)
@@ -67,20 +54,8 @@ function generatePassword() {
 }
 
 
-function pwdGen1() {
-    checkedBoxes()
-}
-
-
-function pwdGen2() {
-    checkedBoxes()
-}
-
-
-
 genButton.addEventListener("click", function() {
-    pwdGen1()
-    pwdGen2()
+    checkedBoxes()
 })
 
 
