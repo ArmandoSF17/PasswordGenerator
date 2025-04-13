@@ -156,10 +156,3 @@ cursor: pointer;
 color: red;
 }
 
-.copy-msg {
-color: #4adf86;
-font-size: 14px;
-text-align: center;
-margin-top: 8px;
--display: none; /* Hidden by default */
-}
