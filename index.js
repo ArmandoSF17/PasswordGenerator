@@ -48,8 +48,6 @@ function generatePassword() {
         password += charactersPool[randomGen]
     }
 
-   
-
     return password
 }
 
