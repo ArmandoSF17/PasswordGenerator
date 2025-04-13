@@ -16,6 +16,10 @@ let uppercaseBox = document.getElementById("inc-uppercase")
 let numbersBox = document.getElementById("inc-numbers") 
 let specialBox = document.getElementById("inc-special") 
 let lowercaseBox = document.getElementById("inc-lowercase") 
+let copyBtn1 = document.querySelector(".copy-btn-1")
+let copyBtn2 = document.querySelector(".copy-btn-2")
+
+
 
 
 
@@ -88,6 +92,35 @@ function checkedBoxes() {
         errorEL.textContent = "You must selected at least one option."
     } 
 }
+
+copyBtn1.addEventListener("click", function() {
+    let msgEl = document.getElementById("copy-one");
+    navigator.clipboard.writeText(pwdEl1.textContent);
+
+    msgEl.classList.add("show");
+    msgEl.textContent = "Copied to the clipboard!";
+    setTimeout(() => {
+        msgEl.classList.remove("show");
+        msgEl.textContent = "";
+    }, 2000);
+    
+    })
+
+copyBtn2.addEventListener("click", function() {
+    let msgEl = document.getElementById("copy-two");
+    navigator.clipboard.writeText(pwdEl2.textContent)
+
+    msgEl.classList.add("show");
+    msgEl.textContent = "Copied to the clipboard!";
+    setTimeout(() => {
+        msgEl.classList.remove("show");
+        msgEl.textContent = "";
+    }, 2000);
+    
+})
+
+
+
 
 
 
