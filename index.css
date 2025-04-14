@@ -12,8 +12,6 @@ height: 600px;
 margin: 64px auto 0 auto;
 }
 
-
-
 .top-text {
 display: flex;
 flex-direction: column;
@@ -28,7 +26,6 @@ margin-top: 1px;
 #span-text {
 color: #4adf86;
 }
-
 
 #btn-pwdgenerator {
 width: 191px;
@@ -52,7 +49,6 @@ transform: scale(1.03)
 #btn-pwdgenerator:active {
 box-shadow: 1px 1px  10px 5px #33d399 ;
 transform: scale(0.98)
-
 }
 
 .pwd-results {
@@ -77,14 +73,12 @@ background-color: #273549;
 margin: 20px auto 0 auto;
 padding-left: 10px;
 padding-right: 5px;
-
 }
 
 .password-box {
 display: flex;
 flex-direction: column;
 align-items: center;
-
 }
 
 .copy-msg {
@@ -100,7 +94,6 @@ transition: opacity 2s ease-in-out;
 .copy-msg.show {
 opacity: 1;
 }
-
 
 .copy-btn-1, .copy-btn-2 {
 background: none;
@@ -123,7 +116,6 @@ transform: scale(0.88);
 padding: 5px;
 font-size: 16px; 
 font-weight: 400;
-
 }
 
 
@@ -141,7 +133,6 @@ justify-content: center;
 flex-direction: column;
 font-size: 16px;
 font-weight: 400;
-
 }
 
 .checkbox-container label {
@@ -156,3 +147,62 @@ cursor: pointer;
 color: red;
 }
 
+
+.length-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -88px;
+  margin-left: 210px;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  padding: 5px;
+  width: fit-content;
+  height: 30px;
+}
+
+.length-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#subtract-btn, #add-btn {
+  width: 30px;
+  height: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subtract-btn:active, #add-btn:active {
+  transform: scale(0.9);
+}
+
+#pwd-length {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background: none;
+  font-size: larger;
+  text-align: center;
+  font-weight: 600;
+  height: 30px;
+  width: 40px;
+  text-align: center;
+  border-left: 2px solid #4adf86;
+  border-right: 2px solid #4adf86;
+  line-height: 1;
+  color: black;
+}
+
+#add-icon, #subtract-icon {
+  width: 30px;
+  height: 30px;
+}
