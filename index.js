@@ -16,6 +16,22 @@ const specialBox = document.getElementById("inc-special")
 const lowercaseBox = document.getElementById("inc-lowercase") 
 const copyBtn1 = document.querySelector(".copy-btn-1")
 const copyBtn2 = document.querySelector(".copy-btn-2")
+let passwordLenght = 12;
+const displayLength = document.getElementById("pwd-length");
+
+document.getElementById("add-btn").addEventListener("click", function() {
+    if (passwordLenght < 18) {
+        passwordLenght++;
+        displayLength.textContent = passwordLenght;
+    }
+})
+
+document.getElementById("subtract-btn").addEventListener("click", function() {
+    if (passwordLenght > 6) {
+        passwordLenght--;
+        displayLength.textContent = passwordLenght;
+    }
+}) 
 
 function generatePassword() {
     
@@ -43,7 +59,7 @@ function generatePassword() {
     }
 
     let password = ""
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < passwordLenght; i++) {
         let randomGen = Math.floor(Math.random() * charactersPool.length)
         password += charactersPool[randomGen]
     }
@@ -91,10 +107,3 @@ copyBtn2.addEventListener("click", function() {
     }, 2000);
     
 })
-
-
-
-
-
-
-
