@@ -5,7 +5,7 @@ Built using **HTML**, **CSS**, and **Vanilla JavaScript**.
 
 🌐 **Live Demo**: [passwordgeneratora.netlify.app](https://passwordgeneratora.netlify.app/)
 
-![Password Generator Screenshot]([./screenshot.png](https://github.com/ArmandoSF17/PasswordGenerator/blob/main/read-me_screenshot.png?raw=true)
+![Password Generator Screenshot](https://github.com/ArmandoSF17/PasswordGenerator/blob/main/read-me_screenshot.png?raw=true)
 
 ---
 
