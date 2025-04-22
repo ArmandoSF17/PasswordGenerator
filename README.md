@@ -1,6 +1,6 @@
 🔐 Password Generator
 
-A simple web application to generate strong, secure passwords based on your preferences. 
+A simple web application to generate strong, secure passwords based on your preferences.  
 Built using **HTML**, **CSS**, and **Vanilla JavaScript**.
 
 🌐 **Live Demo**: [passwordgeneratora.netlify.app](https://passwordgeneratora.netlify.app/)
